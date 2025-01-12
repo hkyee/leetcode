@@ -10,9 +10,10 @@ def bubbleSort(list):
     for i in range(0, N - 1):  # i loop controls the iteration through the list.
         for j in range(1, N - i):  # j loop controls the comparison and swapping.
             if list[j] < list[j - 1]:
-                tmp = list[j - 1]
-                list[j - 1] = list[j]
-                list[j] = tmp
+                # tmp = list[j - 1]
+                # list[j - 1] = list[j]
+                # list[j] = tmp
+                list[j - 1], list[j] = list[j], list[j - 1]
 
     return list
 

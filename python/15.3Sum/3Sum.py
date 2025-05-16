@@ -11,7 +11,7 @@ def threeSum(nums):
     ans = []
     length = len(nums)
     for i in range(length - 2):
-
+        # Avoid duplicates
         if i > 0 and nums[i] == nums[i - 1]:
             continue
 
